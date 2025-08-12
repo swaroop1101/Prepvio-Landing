@@ -93,3 +93,34 @@ export const PASSWORD_RESET_REQUEST_TEMPLATE = `
 </body>
 </html>
 `;
+
+export const WELCOME_EMAIL_TEMPLATE = `
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Prepvio!</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 30px;">
+  <table style="max-width: 600px; margin: auto; background-color: white; padding: 20px; border-radius: 8px;">
+    <tr>
+      <td style="text-align: center;">
+        <h2 style="color: #333;">Welcome, {name}! 🎉</h2>
+        <p style="font-size: 16px; color: #555;">
+          We're thrilled to have you join the <strong>Prepvio</strong> community.
+        </p>
+        <p style="font-size: 16px; color: #555;">
+          You can now explore your dashboard, connect with mentors, and get the best resources for your journey.
+        </p>
+        <a href="${process.env.CLIENT_URL}" style="display: inline-block; padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+          Go to Dashboard
+        </a>
+        <p style="margin-top: 30px; font-size: 14px; color: #777;">
+          If you have any questions, reply to this email — we're here to help!
+        </p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+`;
